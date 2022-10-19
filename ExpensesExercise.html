@@ -67,17 +67,24 @@
     <h1>Expenses</h1>
     <div>
         <form>
-            <label><span>Period</span><span class="range">
-              <input type="date"><span>-</span>
-              <input type="date"></span></label>
-            <label><span>Category</span>
+            <label class="mdc-text-field mdc-text-field--filled">Period:
+                <span class="range">
+                    <input type="date"><span>-</span>
+                    <input type="date"></span>
+                </span>
+                <span class="mdc-line-ripple"></span>
+            </label>
+            <label class="mdc-text-field mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>Category:
                 <select>
                     <option value="food">food</option>
                     <option value="car">car</option>
                 </select>
+                <span class="mdc-line-ripple"></span>
             </label>
-            <label><span>Name</span>
-                <input type="text">
+            <label class="mdc-text-field mdc-text-field--filled name-label">Name:
+                <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                <span class="mdc-line-ripple"></span>
             </label>
         </form>
     </div>
@@ -87,13 +94,9 @@
                 <thead>
                 <tr class="mdc-data-table__header-row">
                     <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Name</th>
-                    <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader"
-                        scope="col">Date
-                    </th>
+                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Date</th>
                     <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Category</th>
-                    <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader"
-                        scope="col">Price in PLN
-                    </th>
+                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Price in PLN</th>
                 </tr>
                 </thead>
                 <tbody class="mdc-data-table__content">
@@ -101,55 +104,55 @@
                     <th class="mdc-data-table__cell" scope="row">coffee</th>
                     <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-07-16</td>
                     <td class="mdc-data-table__cell">food</td>
-                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">40</td>
+                    <td class="mdc-data-table__cell ">40</td>
                 </tr>
                 <tr>
                     <th class="mdc-data-table__cell" scope="row">bread</th>
                     <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-08-03</td>
                     <td class="mdc-data-table__cell">food</td>
-                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">8</td>
+                    <td class="mdc-data-table__cell ">8</td>
                 </tr>
                 <tr>
                     <th class="mdc-data-table__cell" scope="row">cheese</th>
                     <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-08-03</td>
                     <td class="mdc-data-table__cell">food</td>
-                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">21</td>
+                    <td class="mdc-data-table__cell ">21</td>
                 </tr>
                 <tr>
                     <th class="mdc-data-table__cell" scope="row">fuel</th>
                     <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-08-14</td>
                     <td class="mdc-data-table__cell">car</td>
-                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">320</td>
+                    <td class="mdc-data-table__cell">320</td>
                 </tr>
                 <tr>
                     <th class="mdc-data-table__cell" scope="row">bread</th>
                     <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-01</td>
                     <td class="mdc-data-table__cell">food</td>
-                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">8</td>
+                    <td class="mdc-data-table__cell">8</td>
                 </tr>
                 <tr>
                     <th class="mdc-data-table__cell" scope="row">ham</th>
                     <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-01</td>
                     <td class="mdc-data-table__cell">food</td>
-                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">14</td>
+                    <td class="mdc-data-table__cell">14</td>
                 </tr>
                 <tr>
                     <th class="mdc-data-table__cell" scope="row">butter</th>
                     <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-10</td>
                     <td class="mdc-data-table__cell">food</td>
-                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">6</td>
+                    <td class="mdc-data-table__cell">6</td>
                 </tr>
                 <tr>
                     <th class="mdc-data-table__cell" scope="row">fuel</th>
                     <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-10</td>
                     <td class="mdc-data-table__cell">car</td>
-                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">320</td>
+                    <td class="mdc-data-table__cell">320</td>
                 </tr>
                 <tr>
                     <th class="mdc-data-table__cell" scope="row">car wash</th>
                     <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-10</td>
                     <td class="mdc-data-table__cell">car</td>
-                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">60</td>
+                    <td class="mdc-data-table__cell">60</td>
                 </tr>
                 </tbody>
             </table>
@@ -252,7 +255,7 @@
                 <div>PLN</div>
             </div>
         </section>
-    <div>
+    </div>
     </div>
 
 </section>

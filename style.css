@@ -6,6 +6,13 @@
 
 :root {
     --mdc-theme-primary: #00ddc2;
+    --mdc-theme-surface: #413f59;
+}
+
+form {
+    color: #00ddc2;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 html {
@@ -13,9 +20,55 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+input {
+    margin: 5px;
+}
+
+select {
+    margin: 10px;
+}
+
+
 .mdc-tab {
     font-family: Catamaran, sans-serif;
     font-size: 24px;
+}
+
+.mdc-data-table {
+    border-width: 3px;
+}
+
+.mdc-data-table__header-cell {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+
+.mdc-data-table__cell {
+    padding: 20px 16px 10px 20px;
+    color: white;
+}
+
+.mdc-select__selected-text {
+    color: white;
+}
+
+.mdc-data-table__pagination-rows-per-page-label, .mdc-data-table__pagination-total  {
+    color: white;
+}
+
+.name-label {
+    max-width: 200px;
+}
+
+
+element.style {
+}
+* {
+    box-sizing: border-box;
+}
+.page-nav__nav a:hover {
+    text-shadow: 0 0 15px;
 }
 
 body {
