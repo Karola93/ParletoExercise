@@ -1,0 +1,38 @@
+@media only screen and (min-width: 768px) {
+    .page-nav {
+        grid-template-columns: 20px 1fr auto 3fr;
+    }
+}
+
+:root {
+    --mdc-theme-primary: #00ddc2;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+.mdc-tab {
+    font-family: Catamaran, sans-serif;
+    font-size: 24px;
+}
+
+body {
+    background-color: transparent;
+    font-family: Catamaran, sans-serif;
+}
+
+.tab {
+    margin: 50px 75px 50px 75px;
+    font-size: 100px;
+}
+
+.section{
+    margin: 50px 75px 50px 75px;
+}
+
+form {
+    margin-bottom: 50px;
+}
+

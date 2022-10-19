@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UI/UX Task</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="Expenses.css">
+</head>
+<body>
+<aside class="tab">
+    <div class="mdc-tab-bar" role="tablist">
+        <div class="mdc-tab-scroller">
+            <div class="mdc-tab-scroller__scroll-area">
+                <div class="mdc-tab-scroller__scroll-content">
+                    <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                        <span class="mdc-tab__content">
+                            <span class="mdc-tab__text-label">Dashboard</span>
+                        </span>
+                        <span class="mdc-tab-indicator mdc-tab-indicator--active"></span>
+                        <span class="mdc-tab__ripple"></span>
+                    </button>
+                    <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                        <span class="mdc-tab__content">
+                            <span class="mdc-tab__text-label">Reports</span>
+                        </span>
+                        <span class="mdc-tab-indicator mdc-tab-indicator--active"></span>
+                        <span class="mdc-tab__ripple"></span>
+                    </button>
+                    <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                        <span class="mdc-tab__content">
+                            <span class="mdc-tab__text-label">Expenses</span>
+                        </span>
+                        <span class="mdc-tab-indicator mdc-tab-indicator--active"></span>
+                        <span class="mdc-tab__ripple"></span>
+                    </button>
+                    <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                        <span class="mdc-tab__content">
+                            <span class="mdc-tab__text-label">Settings</span>
+                        </span>
+                        <span class="mdc-tab-indicator mdc-tab-indicator--active"></span>
+                        <span class="mdc-tab__ripple"></span>
+                    </button>
+                    <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                        <span class="mdc-tab__content">
+                        <span class="mdc-tab__text-label">Profile</span>
+                        </span>
+                        <span class="mdc-tab-indicator mdc-tab-indicator--active"></span>
+                        <span class="mdc-tab__ripple"></span>
+                    </button>
+                    <button class="mdc-tab mdc-tab--active" role="tab" style="margin-right: 90px" aria-selected="true" tabindex="0">
+                        <span class="mdc-tab__content">
+                        <span class="mdc-tab__text-label">Log out</span>
+                        </span>
+                        <span class="mdc-tab-indicator mdc-tab-indicator--active"></span>
+                        <span class="mdc-tab__ripple"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<section class="section">
+    <h1>Expenses</h1>
+    <div>
+        <form>
+            <label><span>Period</span><span class="range">
+              <input type="date"><span>-</span>
+              <input type="date"></span></label>
+            <label><span>Category</span>
+                <select>
+                    <option value="food">food</option>
+                    <option value="car">car</option>
+                </select>
+            </label>
+            <label><span>Name</span>
+                <input type="text">
+            </label>
+        </form>
+    </div>
+    <div class="mdc-data-table">
+        <div class="mdc-data-table__table-container">
+            <table class="mdc-data-table__table" aria-label="Dessert calories">
+                <thead>
+                <tr class="mdc-data-table__header-row">
+                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Name</th>
+                    <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader"
+                        scope="col">Date
+                    </th>
+                    <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Category</th>
+                    <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader"
+                        scope="col">Price in PLN
+                    </th>
+                </tr>
+                </thead>
+                <tbody class="mdc-data-table__content">
+                <tr>
+                    <th class="mdc-data-table__cell" scope="row">coffee</th>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-07-16</td>
+                    <td class="mdc-data-table__cell">food</td>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">40</td>
+                </tr>
+                <tr>
+                    <th class="mdc-data-table__cell" scope="row">bread</th>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-08-03</td>
+                    <td class="mdc-data-table__cell">food</td>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">8</td>
+                </tr>
+                <tr>
+                    <th class="mdc-data-table__cell" scope="row">cheese</th>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-08-03</td>
+                    <td class="mdc-data-table__cell">food</td>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">21</td>
+                </tr>
+                <tr>
+                    <th class="mdc-data-table__cell" scope="row">fuel</th>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-08-14</td>
+                    <td class="mdc-data-table__cell">car</td>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">320</td>
+                </tr>
+                <tr>
+                    <th class="mdc-data-table__cell" scope="row">bread</th>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-01</td>
+                    <td class="mdc-data-table__cell">food</td>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">8</td>
+                </tr>
+                <tr>
+                    <th class="mdc-data-table__cell" scope="row">ham</th>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-01</td>
+                    <td class="mdc-data-table__cell">food</td>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">14</td>
+                </tr>
+                <tr>
+                    <th class="mdc-data-table__cell" scope="row">butter</th>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-10</td>
+                    <td class="mdc-data-table__cell">food</td>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">6</td>
+                </tr>
+                <tr>
+                    <th class="mdc-data-table__cell" scope="row">fuel</th>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-10</td>
+                    <td class="mdc-data-table__cell">car</td>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">320</td>
+                </tr>
+                <tr>
+                    <th class="mdc-data-table__cell" scope="row">car wash</th>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">2022-09-10</td>
+                    <td class="mdc-data-table__cell">car</td>
+                    <td class="mdc-data-table__cell mdc-data-table__cell--numeric">60</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mdc-data-table__pagination">
+            <div class="mdc-data-table__pagination-trailing">
+                <div class="mdc-data-table__pagination-rows-per-page">
+                    <div class="mdc-data-table__pagination-rows-per-page-label">
+                        Rows per page
+                    </div>
+
+                    <div class="mdc-select mdc-select--outlined mdc-select--no-label mdc-data-table__pagination-rows-per-page-select">
+                        <div class="mdc-select__anchor" role="button" aria-haspopup="listbox"
+                             aria-labelledby="demo-pagination-select" tabindex="0">
+            <span class="mdc-select__selected-text-container">
+              <span id="demo-pagination-select" class="mdc-select__selected-text">5</span>
+            </span>
+                            <span class="mdc-select__dropdown-icon">
+              <svg
+                      class="mdc-select__dropdown-icon-graphic"
+                      viewBox="7 10 10 5">
+                <polygon
+                        class="mdc-select__dropdown-icon-inactive"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 10 12 15 17 10">
+                </polygon>
+                <polygon
+                        class="mdc-select__dropdown-icon-active"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 15 12 10 17 15">
+                </polygon>
+              </svg>
+            </span>
+                            <span class="mdc-notched-outline mdc-notched-outline--notched">
+              <span class="mdc-notched-outline__leading"></span>
+              <span class="mdc-notched-outline__trailing"></span>
+            </span>
+                        </div>
+
+                        <div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                             role="listbox">
+                            <ul class="mdc-list">
+                                <li class="mdc-list-item mdc-list-item--selected" aria-selected="true" role="option"
+                                    data-value="10">
+                                    <span class="mdc-list-item__text">10</span>
+                                </li>
+                                <li class="mdc-list-item" role="option" data-value="25">
+                                    <span class="mdc-list-item__text">25</span>
+                                </li>
+                                <li class="mdc-list-item" role="option" data-value="100">
+                                    <span class="mdc-list-item__text">100</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mdc-data-table__pagination-navigation">
+                    <div class="mdc-data-table__pagination-total">
+                        1‑5 of 100
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Summary</h2>
+        <h3>Total: 797 PLN</h3>
+        <section>
+            <h3>Per period</h3>
+            <div>
+                <div>2022-07</div>
+                <div>40</div>
+                <div>PLN</div>
+            </div>
+            <div>
+                <div>2022-08</div>
+                <div>349</div>
+                <div>PLN</div>
+            </div>
+            <div>
+                <div>2022-09</div>
+                <div>408</div>
+                <div>PLN</div>
+            </div>
+        </section>
+        <section>
+            <h3>Per category</h3>
+            <div>
+                <div>food</div>
+                <div>97</div>
+                <div>PLN</div>
+            </div>
+            <div>
+                <div>car</div>
+                <div>700</div>
+                <div>PLN</div>
+            </div>
+        </section>
+    <div>
+    </div>
+
+</section>
+</body>
+</html>
